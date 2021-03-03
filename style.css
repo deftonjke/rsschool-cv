@@ -13,6 +13,16 @@ border: 1px solid gray;
 box-sizing: border-box;
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+section {
+  width: 449px;
+}
+
 .contacts-block {
   margin-left: 50px;
 }
