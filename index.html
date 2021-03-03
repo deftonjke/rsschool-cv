@@ -1,51 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>VITALI SA. CV</title>
 </head>
 <body>
-  <header>
-    <img src="25231.svg" alt="avatar">
-    <h1>VITALI SARANCHUK</h1>
-  </header>
-  <main>
-    <h3>Contacts</h3>
-    <ul>
-      <li><b>Email:</b> <a href="mailto:vitali.saranchuk@gmail.com">vitali.saranchuk@gmail.com</a></li>
-      <li><b>Discord:</b> rrraaawwwrrr#1814</li>
-    </ul>
-    <h3>About me</h3>
-    <p>My name is Vitali. In the past, I worked in an online store based on 1C-Bitrix CMS as a webmaster. 
-      There was also practice with the installation of templates and plugins on Wordpress, setting up hosting and domain. 
-      Right now my goal is to develop as a javascript specialist.</p>
-    <h3>Skills</h3>
-    <ul>
-      <li>HTML, CSS, JS</li>
-      <li>Git</li>
-      <li>CMS 1C-Bitrix, Wordpress</li>
-    </ul>
-    <h3>Code example</h3>
-    <pre>
-      <code>
+  <div class="wrapper">
+    <header>
+      <img id="avatar" src="avator.jpg" alt="avatar">
+      <div class="contacts-block">
+        <h1>VITALI SARANCHUK</h1>
+        <h2>Junior Frontend Developer</h2>
+          <ul id="social">
+            <li class="email-ico"><a href="mailto:vitali.saranchuk@gmail.com">
+              vitali.saranchuk@gmail.com</a></li>
+            <li class="discord-ico"><a href="https://discord.gg/RSxd6RQU" target="_blank">
+              rrraaawwwrrr#1814</a></li>
+            <li class="github-ico"><a href="https://github.com/deftonjke/" target="_blank">
+              github.com/deftonjke</a></li>
+            <li class="phone-ico"><a href="tel:+375000000000"
+              >+375000000000</a></li>
+          </ul>
+      </div>
+    </header>
+    <main>
+      <h3>Profile</h3>
+      <p>My name is Vitali. In the past, I worked in an online store based on 1C-Bitrix CMS as site administrator. 
+        There was also practice with Wordpress (installation of templates, plugins and malware removal) and setting up hosting and domain. 
+        Right now my goal is to develop as a JavaScript specialist.</p>
+        <div class="container">
+          <section class="features">
+            <h3>Skills</h3>
+            <ul>
+              <li>HTML, CSS, JS</li>
+              <li>Git</li>
+              <li>CMS 1C-Bitrix, Wordpress</li>
+            </ul>
+          </section>
+          <section class="features">
+            <h3>Projects</h3>
+            <ul>
+              <li><a href="https://github.com/deftonjke/RockPaperScissors" target="_blank">Rock Paper Scissors</a></li>
+              <li>Etch-a-Sketch</li>
+            </ul>
+          </section>
+          <section class="features">
+            <h3>Education</h3>
+            <p><span style="font-weight: 500;">The Gomel State Road-Building College named Lenin Komsomol of Belarus</span></p>
+            <p>2012-<time datetime="2015-06-15 13:00">2015</time> Technical operation of vehicles</p>
+          </section>
+          <section class="features">
+            <h3>Language</h3>
+            <ul>
+              <li>English - Pre-intermediate</li>
+              <li>Russian - Native</li>
+            </ul>
+          </section>
+          <section class="features">
+            <h3>Code example</h3>
+            <pre>
+              <code>
       let computerPlay = () => {
         let resultComp = words[Math.floor(Math.random() * Math.floor(3))];
         return resultComp;
-        };
-      </code>
-    </pre>
-    <h3>Projects</h3>
-    <ul>
-      <li><a href="https://github.com/deftonjke/RockPaperScissors" target="_blank">Paper Scissors</a> game</li>
-      <li>Etch-a-Sketch game</li>
-    </ul>
-    <h3>Education</h3>
-    <p><b>The Gomel State Road-Building College named Lenin Komsomol of Belarus</b> 2012-2015 Technical operation of vehicles</p>
-    <h3>English Level</h3>
-    <p>Intermediate</p>
-  </main>
+      };
+              </code>
+            </pre>
+          </section>
+      </div>
+    </main>
+  </div>
+  <footer>
+    <a href="https://rs.school/js/" target="_blank"><img class="footer-ico" src="rs_school_js.svg" alt="rsschool"></a>
+    <a href="https://github.com/deftonjke/" target="_blank"><img class="footer-ico" src="github.svg" alt="github"></a>
+    <img class="footer-ico" src="2021.svg" alt="made in 2021">
+  </footer>
 </body>
 </html>
