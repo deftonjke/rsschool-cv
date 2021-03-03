@@ -4,31 +4,37 @@ body {
 }
 
 .wrapper {
-background-color: #A7DBD8;
-max-width: 1000px;
-padding-left: 50px;
-padding-right: 50px;
-margin: auto;
-border: 1px solid gray;
-box-sizing: border-box;
-}
+  /* Box-model */
+  box-sizing: border-box;
+  max-width: 1000px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: auto;
+  /* Visual */
+  background-color: #A7DBD8;
+  border: 1px solid gray;
+  }
 
-.container {
+/*
+ * Component section heading
+ */
+
+header {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px 0px;
+  border-bottom: 3px solid #E0E4CC;
 }
 
-section {
-  width: 449px;
-}
+h1 { margin: 0; }
 
-.contacts-block {
-  margin-left: 50px;
-}
-
-.icons {
-  max-width: 50px;
+h2 {
+  display: inline;
+  padding: 0 2px;
+  margin: 0;
+  background-color: #E0E4CC;
+  font-weight: 400;
+  font-size: 1.5em;
 }
 
 #avatar {
@@ -36,49 +42,14 @@ section {
   box-shadow: 3px 3px 1px #69D2E7;
 }
 
-header {
-  display: flex;
-  align-items: center;
-  border-bottom: 3px solid #E0E4CC;
-  padding: 10px 0px;
-}
-
-h1 {
-  margin: 0;
-}
-
-h2 {
-  font-weight: 400;
-  margin: 0;
-  padding: 0px 2px;
-  background-color: #E0E4CC;
-  font-size: 1.5em;
-  display: inline;
-}
-
-h3 {
-  text-transform: uppercase;
-}
-
-footer {
-  background-color: #69D2E7;
-  border: 1px solid gray;
-  border-top: none;
-  box-sizing: border-box;
-  width: 1000px;
-  margin: auto;
-  display: flex;
-  justify-content: space-evenly;
-  padding: 5px;
-  align-items: center;
-}
+.contacts-block { margin-left: 50px; }
 
 #social {
-  list-style-type: none;
-  padding: 0;
-  column-count: 2;
   margin-top: 24px;
-  margin-bottom: 0;
+  margin-bottom: 0; 
+  padding: 0;
+  list-style-type: none;
+  column-count: 2;
 }
 
 #social li {
@@ -86,21 +57,13 @@ footer {
   padding-left: 2.2em;
 }
 
-.email-ico {
-  background: url("email-8.svg") no-repeat;
-}
+.email-ico { background: url("email-8.svg") no-repeat; }
 
-.github-ico {
-  background: url("github.svg") no-repeat;
-}
+.github-ico { background: url("github.svg") no-repeat; }
 
-.discord-ico {
-  background: url("discord.svg") no-repeat;
-}
+.discord-ico { background: url("discord.svg") no-repeat; }
 
-.phone-ico {
-  background: url("phone.svg") no-repeat;
-}
+.phone-ico { background: url("phone.svg") no-repeat; }
 
 a {
   color: #000000;
@@ -112,7 +75,40 @@ a:hover {
   text-decoration: none;
 }
 
+/*
+ * Component main content section
+ */
+
+ h3 { text-transform: uppercase; }
+
+ .container {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+ }
+ 
+ .features { width: 449px; }
+
+/*
+ * Component footer section
+ */
+
+footer {
+  /* Box-model */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-sizing: border-box;
+  max-width: 1000px;
+  margin: auto;
+  padding: 5px;
+  /* Visual */
+  background-color: #69D2E7;
+  border: 1px solid gray;
+  border-top: none;
+}
+
 .footer-ico {
-  width: 50px;
   height: 50px;
+  width: 60px;
 }
